@@ -6,8 +6,8 @@ In addition to risk-bounded dynamic controllability checking, risk-bounded dynam
 outputs of the main function of the algorithm as well. However, this is descoped and not implemented in this repository.
 
 On the other hand, we have implemented some improvements and extensions discussed in chapter 8 of [1]. The first is that we use a MIP solver
-with piecewise linearization, instead of a NLP solver. The second is the support for multiple separate chance constraints, no
-just a single global one. The fourth one is that we use a SAT solver to perform unit propagation when enumerating / branching over
+with piecewise linearization, instead of a NLP solver. The second is the support for multiple separate chance constraints, not
+just a single global one. The third one is that we use a SAT solver to perform unit propagation when enumerating / branching over
 linear constraints composing disjunctive linear constraints. Finally, when the selected (linear) constraints lead
 to infeasibility of the MIP, [1] advises to use an irreducible infeasible set (IIS) of constraints, but descopes it,
 since IIS computation for LP/MIP and especially NLP is often only available in the most high-end commercial solvers. We use a simple general
