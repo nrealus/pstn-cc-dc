@@ -13,8 +13,10 @@ to infeasibility of the MIP, [1] advises to use an irreducible infeasible set (I
 since IIS computation for LP/MIP and especially NLP is often only available in the most high-end commercial solvers. We use a simple general
 additive-deletion filter [2] to return an IIS only composed of some of the linear constraints selected for the MIP. Indeed, there is no need to include the reformulated chance constraint and linearization constraints in our set of conflicting constraints, because they must always hold at the top level.
 
-Also, please note that our implementation differs a bit from the one presented in [1].
+Please also note that our implementation differs a bit from the one presented in [1].
 Indeed, instead of explicitly implementing the 3 layers described in [1], we "flattened" them into a single layer.
+
+The code for STNU dynamic controllability checking with conflict extraction in `stnu.py` is (almost?) exactly the same as in [this repository](https://github.com/nrealus/stnu-conflicts).
 
 Final note: the code is still a bit unclean, and almost uncommented / undocumented. This should be improved. Also, it would be nice to have some more tests.
 
