@@ -11,7 +11,7 @@ just a single global one. The third one is that we use a SAT solver to perform u
 linear constraints composing disjunctive linear constraints. Finally, when the selected (linear) constraints lead
 to infeasibility of the MIP, [1] advises to use an irreducible infeasible set (IIS) of constraints, but descopes it,
 since IIS computation for LP/MIP and especially NLP is often only available in the most high-end commercial solvers. We use a simple general
-additive-deletion filter [2] to return an IIS of linear constraints selected for the MIP. Indeed, there is no need to include the reformulated chance constraint and linearization constraints in our IIS, because they must always hold at the top level.
+additive-deletion filter [2] to return an IIS only composed of some of the linear constraints selected for the MIP. Indeed, there is no need to include the reformulated chance constraint and linearization constraints in our set of conflicting constraints, because they must always hold at the top level.
 
 Also, please note that our implementation differs a bit from the one presented in [1].
 Indeed, instead of explicitly implementing the 3 layers described in [1], we "flattened" them into one function.
