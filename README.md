@@ -19,4 +19,5 @@ Indeed, instead of explicitly implementing the 3 layers described in [1], we "fl
 Final note: the code is still a bit unclean, and almost uncommented / undocumented. This should be improved. Also, it would be nice to have some more tests.
 
 [1]: [Wang, A.J. Risk-Bounded Dynamic Scheduling of Temporal Plans, 2022 (PhD Thesis)](https://dspace.mit.edu/handle/1721.1/147542)
+
 [2]: [Chinneck, J.W. Feasibility and Infeasibility in Optimization, 2007 (Tutorial for CP-AI-OR-07)](https://www.sce.carleton.ca/faculty/chinneck/docs/CPAIOR07InfeasibilityTutorial.pdf)
