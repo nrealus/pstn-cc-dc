@@ -14,7 +14,7 @@ since IIS computation for LP/MIP and especially NLP is often only available in t
 additive-deletion filter [2] to return an IIS only composed of some of the linear constraints selected for the MIP. Indeed, there is no need to include the reformulated chance constraint and linearization constraints in our set of conflicting constraints, because they must always hold at the top level.
 
 Also, please note that our implementation differs a bit from the one presented in [1].
-Indeed, instead of explicitly implementing the 3 layers described in [1], we "flattened" them into one function.
+Indeed, instead of explicitly implementing the 3 layers described in [1], we "flattened" them into a single layer.
 
 Final note: the code is still a bit unclean, and almost uncommented / undocumented. This should be improved. Also, it would be nice to have some more tests.
 
